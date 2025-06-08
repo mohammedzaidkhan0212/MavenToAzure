@@ -1,14 +1,14 @@
 trigger:
   - main
- pool:
+pool:
   name: Default
- steps:
+steps:
   - script: echo Hello, it's my Azure Devops App
-  displayName: 'Run an echo command'
+    displayName: 'Run an echo command'
   - script: mvn clean install
-  displayName: 'Build with maven'
+    displayName: 'Build with maven'
   - script: java -jar target/Azure-0.0.1-SNAPSHOT.jar
-  displayName: 'Run a jar file of My demoMaven App'
+    displayName: 'Run a jar file of My demoMaven App'
 
 
 
